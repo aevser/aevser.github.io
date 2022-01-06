@@ -1,0 +1,17 @@
+.layout__name{
+    background: #2e8ce3;
+    padding: 15px ;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    border: solid 1px #73c8f0;
+    margin: 20px auto;
+    width: 250px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+.layout__name a{
+    text-decoration: none;
+    color: #fff;
+}
