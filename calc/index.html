@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body class="question-controller">
+
+    <section class="configurator">
+        <div class="wrapper">
+            <div class="configurator__label">
+                Онлайн Конфигуратор
+            </div>
+            <div class="configurator__title">
+                Задайте параметры стекла
+            </div>
+            <form class="configurator__form">
+                <div class="configurator__form-inner">
+                    <label class="configurator__form-block">
+                        <div class="configurator__block-form-title">
+                            Укажите длину
+                        </div>
+                        <input type="number" id="width" class="configurator__block-form-input" placeholder="Длина | мм" value="1000">
+                    </label>
+                    <label class="configurator__form-block">
+                        <div class="configurator__block-form-title">
+                            Укажите ширину
+                           
+                        </div>
+                        <input type="text" id="height" class="configurator__block-form-input" placeholder="Ширина | мм" value="1000">
+                    </label>
+                    <label class="configurator__form-block">
+                        <div class="configurator__block-form-title">
+                            Форма стекла 
+                            <div class="question">
+                                <img src="images/6.png" alt="">
+                               
+                            </div>
+                            <div class="answer">
+                                ПРИ ВЫБОРЕ ФОРМЫ КРУГ ИЛИ ОВАЛ:
+                                <ul>
+                                    <li>Длина и Ширина у круглой формы совпадают</li>
+                                    <li>Длина и Ширина у овальной формы разделяются</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <select name="" id="form" class="configurator__block-form-select">
+                            <option select data-cof="1" value="1">Прямоугольник</option>
+                            <option data-cof="1.5" value="2">Круг (овал)</option>
+                        </select>                        
+                    </label>
+                    <label class="configurator__form-block">
+                        <div class="configurator__block-form-title">
+                            Вид обработки
+                            <div class="question">
+                                <img src="images/6.png" alt="">
+                            </div>
+                            <div class="answer">
+                                ПРИ ВЫБОРЕ МЕТОДА ОБРАБОТКИ КРОМКИ:
+                                <ul>
+                                    <li>Без обработки - голый рез, можно порезать руки </li>
+                                    <li>Шлифовка - сняты фаски, матовый торец стекла </li>
+                                    <li>Полировка - сняты фаски, глянцевый торец стекла </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <select name="" id="type" class="configurator__block-form-select">
+                            <option select data-cof="1" value="3">Без обработки</option>
+                            <option data-cof="1.5" value="4">С шлифовкой</option>
+                            <option data-cof="1.8" value="5">С полировкой</option>
+                        </select>                        
+                    </label>
+                    <label class="configurator__form-block">
+                        <div class="configurator__block-form-title">
+                            Количество
+                        </div>
+                        <div class="configurator__block-form-quantity">
+                            <div class="configurator__block-form-quantity-minus">-</div>
+                            <input type="text" id="quantity" class="configurator__block-form-input" disabled value="1">
+                            <div class="configurator__block-form-quantity-plus">+</div>
+                        </div>
+                    </label>
+                    <div class="configurator__form-block">
+                        <div class="configurator__block-form-title">
+                            Сумма
+                        </div>
+                        <div class="configurator__block-form-result">
+                            <span id="result">1500</span> p
+                        </div>
+                    </div>
+                    <div class="configurator__block-form-close"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="overlay"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
