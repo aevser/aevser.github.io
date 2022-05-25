@@ -4,7 +4,7 @@ $(document).ready(function() {
           return state.text;
         }
       
-        var baseUrl = "../images";
+        var baseUrl = "/calc/images";
         var $state = $(
           '<span class="flex"><img class="img-flag" /> <span></span></span>'
         );
