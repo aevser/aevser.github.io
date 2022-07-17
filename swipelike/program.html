@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>template</title>
+		<link rel="stylesheet" href="css/app.min.css">
+	</head>
+	<body>
+		
+		<div class="wrapper">
+		
+			<header class="header">
+				<div class="header__inner">
+					<div class="header__catalog catalog">
+						Каталог 
+					</div>
+					<form class="header__search search">
+						<input type="text" class="search__input" placeholder="Я ищу...">
+						<button class="search__btn"></button>
+					</form>
+					<div class="header__additional-menu additional-menu">
+						<div class="additional-menu__item additional-menu__item_search d-mob">
+							<span class="additional-menu__item-title">Поиск</span>
+						</div>
+						<div class="additional-menu__item additional-menu__item_cart">
+							<span class="additional-menu__item-title">Корзина</span>
+						</div>
+						<div class="additional-menu__item additional-menu__item_profile">
+							<span class="additional-menu__item-title">Профиль</span>
+						</div>
+						<div id="like" class="additional-menu__item additional-menu__item_like">
+							<span class="additional-menu__item-title">Нравится</span>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="breadcrumbs">
+				<a href="javascript:void(0);" class="breadcrumbs__item ">
+					Главная
+				</a>
+				<span  class="breadcrumbs__item">
+					Умная площадка
+				</span>
+			</div>
+
+			<section class="main">
+				<div class="title">
+					<h1>
+						Программа 1
+					</h1>
+					<a href="" class="btn btn_back">Назад</a>
+				</div>
+				<span>3 недели | 6 упражнений</span>
+				<div class="main__content">
+					<p>Уличная площадка с тренажерным комплексом из 21 тренажера. Для иллюстрации упражнений лучше конечно использовать анимацию, пусть и простую. Сможем ли мы получить исходники изображений в векторе (svg)? Нам так было бы удобнее делать анимацию. Размер изображений для разных упражнений должен быть одинаковый по размеру и пропорциям. Для каждого изображений одного упражнения - оборудование должно быть неподвижно и находиться в одном месте</p>
+					<a href="javascript:void(0);" class="btn">Следующая программа</a>
+				</div>
+				<div class="exercises">
+					<a href="javascript:void(0);" class="exercises__item">
+						<img src="images/dest/exercise01.jpg" alt="" class="exercises__item-img">
+						<div class="exercises__item-text">
+							<div class="exercises__item-title">Отжимания <br> от перекладины</div>
+						</div>
+					</a>
+					<a href="javascript:void(0);" class="exercises__item">
+						<img src="images/dest/exercise02.jpg" alt="" class="exercises__item-img">
+						<div class="exercises__item-text">
+							<div class="exercises__item-title">Отжимания обратным <br> хватом</div>
+						</div>
+					</a>
+					<a href="javascript:void(0);" class="exercises__item">
+						<img src="images/dest/exercise03.jpg" alt="" class="exercises__item-img">
+						<div class="exercises__item-text">
+							<div class="exercises__item-title">Подтягивания <br> на турнике</div>
+						</div>
+					</a>
+					<a href="javascript:void(0);" class="exercises__item">
+						<img src="images/dest/exercise04.jpg" alt="" class="exercises__item-img">
+						<div class="exercises__item-text">
+							<div class="exercises__item-title">Скручивания <br> на скамье</div>
+						</div>
+					</a>
+				</div>
+			</section>			
+
+		</div>
+
+		
+		<!-- Подключаем скрипты проекта -->
+		<script src="js/app.min.js"></script>
+	</body>
+</html>
